@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+
+    <hr />
+
+    <h2>WIP Build a Blog</h2>
+
+    <ul>
+        {% for blog in submitted_blogs %}
+        <li>{{blog.title_blog}}</li>
+        {% endfor %}
+    </ul>
+
+ 
+{% endblock %}
