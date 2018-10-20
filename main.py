@@ -40,7 +40,6 @@ def add_to_homepage():
         return redirect("/newpost?error_title=" + error_title + '&error_body=' + error_body )
     
     
-
     if request.method == 'POST':
         new_title = request.form['title_blog']
         new_body = request.form['body_blog']
