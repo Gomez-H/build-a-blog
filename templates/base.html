@@ -2,11 +2,17 @@
 <html>
     <head>
         <title>Build A Blog</title>
+        <style type="text/css">
+            .error {
+                color: red;
+            }
+        </style>
     </head>
 <body>
         <nav>
-            <a href="{{url_for('main_blog_page')}}">Main Page</a> |
-            <a href="{{url_for('new_post')}}">Add new blog</a> 
+            <a href="/blog"> Main Page </a> |
+            <a href="/newpost"> Add new blog </a> 
+            
         </nav>
     <!--Add some navigation links to back to main page and add a blog entry-->
 

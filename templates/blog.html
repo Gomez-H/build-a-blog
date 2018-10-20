@@ -5,13 +5,15 @@
 
     <hr />
 
-    <h2>WIP Build a Blog</h2>
+    <h2>Build a Blog</h2>
 
-    <ul>
-        {% for blog in submitted_blogs %}
-        <li>{{blog.title_blog}}</li>
-        {% endfor %}
-    </ul>
+    
+        {% for blog in blogs %}
+        
 
+        <h2><a href="/blog?id={{blog.id}}">{{blog.title_blog}}</a> </h2>
+        <p>{{ blog.body_blog }}</p>
+        
+        {% endfor %}    
  
 {% endblock %}
