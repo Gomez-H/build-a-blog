@@ -11,12 +11,12 @@ class Blog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title_blog = db.Column(db.String(120))
     body_blog = db.Column(db.String(200))
-    submitted_blog = db.Column(db.Boolean)
+    
     
     def __init__(self, title_blog, body_blog):
         self.title_blog = title_blog
         self.body_blog = body_blog
-        self.submitted_blog = False
+        
 
 
 @app.route('/')
